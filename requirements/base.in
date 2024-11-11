@@ -1,0 +1,14 @@
+
+fastapi[all]==0.115.4
+alembic==1.14.0
+SQLAlchemy==2.0.36
+redis==5.2.0
+markdown==3.5.2
+python-dotenv==1.0.1
+psycopg2==2.9.10
+pip-tools==7.4.1
+pytz==2024.2
+beautifulsoup4==4.12.3
+playwright==1.48.0
+requests==2.32.3
+toml==0.10.2

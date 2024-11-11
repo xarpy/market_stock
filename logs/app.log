@@ -1,0 +1,138 @@
+INFO | stock-api | 2024-11-11 03:12:32,150 | Started Stock API Challenge!
+INFO | stock-api | 2024-11-11 03:14:37,978 | Started Stock API Challenge!
+INFO | stock-api | 2024-11-11 03:14:47,339 | Started Stock API Challenge!
+INFO | stock-api | 2024-11-11 03:15:10,629 | Started Stock API Challenge!
+INFO | stock-api | 2024-11-11 03:44:31,558 | Started Stock API Challenge!
+INFO | stock-api | 2024-11-11 03:44:32,821 | Started Stock API Challenge!
+INFO | stock-api | 2024-11-11 03:44:34,028 | Started Stock API Challenge!
+INFO | stock-api | 2024-11-11 03:44:35,448 | Started Stock API Challenge!
+INFO | stock-api | 2024-11-11 03:44:37,240 | Started Stock API Challenge!
+INFO | stock-api | 2024-11-11 03:44:39,847 | Started Stock API Challenge!
+INFO | stock-api | 2024-11-11 03:44:44,093 | Started Stock API Challenge!
+INFO | stock-api | 2024-11-11 03:44:51,513 | Started Stock API Challenge!
+INFO | stock-api | 2024-11-11 03:45:05,328 | Started Stock API Challenge!
+INFO | stock-api | 2024-11-11 03:52:18,561 | Started Stock API Challenge!
+INFO | stock-api | 2024-11-11 03:52:19,856 | Started Stock API Challenge!
+INFO | stock-api | 2024-11-11 03:52:21,132 | Started Stock API Challenge!
+INFO | stock-api | 2024-11-11 03:52:22,574 | Started Stock API Challenge!
+INFO | stock-api | 2024-11-11 03:52:24,413 | Started Stock API Challenge!
+INFO | stock-api | 2024-11-11 03:52:27,164 | Started Stock API Challenge!
+INFO | stock-api | 2024-11-11 03:54:37,277 | Started Stock API Challenge!
+INFO | stock-api | 2024-11-11 03:54:38,929 | Started Stock API Challenge!
+DEBUG | urllib3.connectionpool | 2024-11-11 03:56:09,535 | Starting new HTTPS connection (1): api.polygon.io:443
+DEBUG | urllib3.connectionpool | 2024-11-11 03:56:10,040 | https://api.polygon.io:443 "GET /v1/open-close/APPL/2024-11-11?apiKey=bmN7i7CrzrpKqFvgbB1fEaztCwZKSUjJ HTTP/11" 403 190
+ERROR | server.application.external_api | 2024-11-11 03:56:10,041 | HTTP error occurred: 403 - {"status":"NOT_AUTHORIZED","request_id":"b4de89ad52131221adc15b75eae9bf41","message":"Attempted to request today's data before end of day. Please upgrade your plan at https://polygon.io/pricing"}
+INFO | stock-api | 2024-11-11 04:27:28,127 | Started Stock API Challenge!
+INFO | stock-api | 2024-11-11 04:27:35,908 | Started Stock API Challenge!
+DEBUG | asyncio | 2024-11-11 04:27:35,988 | Using selector: EpollSelector
+INFO | httpx | 2024-11-11 04:27:35,990 | HTTP Request: GET http://testserver/stock/aapl "HTTP/1.1 404 Not Found"
+DEBUG | asyncio | 2024-11-11 04:27:36,020 | Using selector: EpollSelector
+INFO | httpx | 2024-11-11 04:27:36,021 | HTTP Request: GET http://testserver/stock/invalid "HTTP/1.1 404 Not Found"
+INFO | stock-api | 2024-11-11 04:28:24,997 | Started Stock API Challenge!
+INFO | stock-api | 2024-11-11 04:28:47,376 | Started Stock API Challenge!
+INFO | stock-api | 2024-11-11 04:28:55,074 | Started Stock API Challenge!
+DEBUG | asyncio | 2024-11-11 04:28:55,128 | Using selector: EpollSelector
+INFO | httpx | 2024-11-11 04:28:55,131 | HTTP Request: GET http://testserver/stock/aapl "HTTP/1.1 404 Not Found"
+DEBUG | asyncio | 2024-11-11 04:28:55,160 | Using selector: EpollSelector
+INFO | httpx | 2024-11-11 04:28:55,162 | HTTP Request: GET http://testserver/stock/invalid "HTTP/1.1 404 Not Found"
+INFO | stock-api | 2024-11-11 04:30:42,211 | Started Stock API Challenge!
+DEBUG | asyncio | 2024-11-11 04:30:42,267 | Using selector: EpollSelector
+INFO | httpx | 2024-11-11 04:30:42,268 | HTTP Request: GET http://testserver/stock/aapl "HTTP/1.1 404 Not Found"
+DEBUG | asyncio | 2024-11-11 04:30:42,298 | Using selector: EpollSelector
+INFO | httpx | 2024-11-11 04:30:42,300 | HTTP Request: GET http://testserver/stock/invalid "HTTP/1.1 404 Not Found"
+INFO | stock-api | 2024-11-11 04:31:59,302 | Started Stock API Challenge!
+INFO | stock-api | 2024-11-11 04:32:11,711 | Started Stock API Challenge!
+DEBUG | asyncio | 2024-11-11 04:32:11,767 | Using selector: EpollSelector
+INFO | httpx | 2024-11-11 04:32:11,769 | HTTP Request: GET http://testserver/stock/aapl "HTTP/1.1 404 Not Found"
+DEBUG | asyncio | 2024-11-11 04:32:11,799 | Using selector: EpollSelector
+INFO | httpx | 2024-11-11 04:32:11,800 | HTTP Request: GET http://testserver/stock/invalid "HTTP/1.1 404 Not Found"
+INFO | stock-api | 2024-11-11 04:32:26,110 | Started Stock API Challenge!
+INFO | stock-api | 2024-11-11 04:35:03,460 | Started Stock API Challenge!
+DEBUG | asyncio | 2024-11-11 04:35:03,514 | Using selector: EpollSelector
+INFO | httpx | 2024-11-11 04:35:03,516 | HTTP Request: GET http://testserver/stock/aapl "HTTP/1.1 404 Not Found"
+DEBUG | asyncio | 2024-11-11 04:35:03,546 | Using selector: EpollSelector
+INFO | httpx | 2024-11-11 04:35:03,548 | HTTP Request: GET http://testserver/stock/invalid "HTTP/1.1 404 Not Found"
+INFO | stock-api | 2024-11-11 04:35:23,826 | Started Stock API Challenge!
+DEBUG | asyncio | 2024-11-11 04:35:23,886 | Using selector: EpollSelector
+INFO | httpx | 2024-11-11 04:35:23,888 | HTTP Request: GET http://testserver/stock/aapl "HTTP/1.1 404 Not Found"
+DEBUG | asyncio | 2024-11-11 04:35:23,919 | Using selector: EpollSelector
+INFO | httpx | 2024-11-11 04:35:23,921 | HTTP Request: GET http://testserver/stock/invalid "HTTP/1.1 404 Not Found"
+INFO | stock-api | 2024-11-11 04:35:30,139 | Started Stock API Challenge!
+INFO | stock-api | 2024-11-11 04:35:34,529 | Started Stock API Challenge!
+INFO | stock-api | 2024-11-11 04:35:37,662 | Started Stock API Challenge!
+DEBUG | asyncio | 2024-11-11 04:35:37,718 | Using selector: EpollSelector
+INFO | httpx | 2024-11-11 04:35:37,719 | HTTP Request: GET http://testserver/stock/aapl "HTTP/1.1 404 Not Found"
+DEBUG | asyncio | 2024-11-11 04:35:37,749 | Using selector: EpollSelector
+INFO | httpx | 2024-11-11 04:35:37,750 | HTTP Request: GET http://testserver/stock/invalid "HTTP/1.1 404 Not Found"
+INFO | stock-api | 2024-11-11 04:37:17,887 | Started Stock API Challenge!
+INFO | stock-api | 2024-11-11 04:37:20,918 | Started Stock API Challenge!
+DEBUG | asyncio | 2024-11-11 04:37:20,975 | Using selector: EpollSelector
+INFO | httpx | 2024-11-11 04:37:20,977 | HTTP Request: GET http://testserver/stock/aapl "HTTP/1.1 404 Not Found"
+DEBUG | asyncio | 2024-11-11 04:37:21,267 | Using selector: EpollSelector
+DEBUG | asyncio | 2024-11-11 04:37:21,272 | Using selector: EpollSelector
+DEBUG | asyncio | 2024-11-11 04:37:25,496 | Using selector: EpollSelector
+DEBUG | asyncio | 2024-11-11 04:37:31,391 | Using selector: EpollSelector
+INFO | httpx | 2024-11-11 04:37:31,392 | HTTP Request: GET http://testserver/stock/invalid "HTTP/1.1 404 Not Found"
+INFO | stock-api | 2024-11-11 04:37:40,777 | Started Stock API Challenge!
+INFO | stock-api | 2024-11-11 04:37:41,836 | Started Stock API Challenge!
+DEBUG | asyncio | 2024-11-11 04:37:41,891 | Using selector: EpollSelector
+INFO | httpx | 2024-11-11 04:37:41,892 | HTTP Request: GET http://testserver/stock/aapl "HTTP/1.1 404 Not Found"
+DEBUG | asyncio | 2024-11-11 04:37:42,191 | Using selector: EpollSelector
+DEBUG | asyncio | 2024-11-11 04:37:42,197 | Using selector: EpollSelector
+DEBUG | asyncio | 2024-11-11 04:37:45,629 | Using selector: EpollSelector
+INFO | httpx | 2024-11-11 04:37:45,634 | HTTP Request: GET http://testserver/stock/invalid "HTTP/1.1 404 Not Found"
+INFO | stock-api | 2024-11-11 04:38:42,434 | Started Stock API Challenge!
+INFO | stock-api | 2024-11-11 04:38:48,694 | Started Stock API Challenge!
+DEBUG | asyncio | 2024-11-11 04:38:48,749 | Using selector: EpollSelector
+INFO | httpx | 2024-11-11 04:38:48,751 | HTTP Request: GET http://testserver/stock/aapl "HTTP/1.1 404 Not Found"
+DEBUG | asyncio | 2024-11-11 04:38:48,780 | Using selector: EpollSelector
+INFO | httpx | 2024-11-11 04:38:48,782 | HTTP Request: GET http://testserver/stock/invalid "HTTP/1.1 404 Not Found"
+INFO | stock-api | 2024-11-11 04:39:20,618 | Started Stock API Challenge!
+DEBUG | asyncio | 2024-11-11 04:39:20,677 | Using selector: EpollSelector
+INFO | httpx | 2024-11-11 04:39:20,679 | HTTP Request: GET http://testserver/stock/aapl "HTTP/1.1 404 Not Found"
+DEBUG | asyncio | 2024-11-11 04:39:20,714 | Using selector: EpollSelector
+INFO | httpx | 2024-11-11 04:39:20,715 | HTTP Request: GET http://testserver/stock/invalid "HTTP/1.1 404 Not Found"
+INFO | stock-api | 2024-11-11 04:41:09,134 | Started Stock API Challenge!
+DEBUG | asyncio | 2024-11-11 04:41:09,191 | Using selector: EpollSelector
+INFO | httpx | 2024-11-11 04:41:09,193 | HTTP Request: GET http://testserver/stock/aapl "HTTP/1.1 404 Not Found"
+DEBUG | asyncio | 2024-11-11 04:41:09,223 | Using selector: EpollSelector
+INFO | httpx | 2024-11-11 04:41:09,224 | HTTP Request: GET http://testserver/stock/invalid "HTTP/1.1 404 Not Found"
+INFO | stock-api | 2024-11-11 04:41:22,097 | Started Stock API Challenge!
+INFO | stock-api | 2024-11-11 04:44:04,625 | Started Stock API Challenge!
+INFO | stock-api | 2024-11-11 04:44:19,916 | Started Stock API Challenge!
+INFO | stock-api | 2024-11-11 04:44:29,414 | Started Stock API Challenge!
+DEBUG | asyncio | 2024-11-11 04:44:29,474 | Using selector: EpollSelector
+INFO | httpx | 2024-11-11 04:44:29,476 | HTTP Request: GET http://testserver/stock/aapl "HTTP/1.1 404 Not Found"
+DEBUG | asyncio | 2024-11-11 04:44:29,508 | Using selector: EpollSelector
+INFO | httpx | 2024-11-11 04:44:29,510 | HTTP Request: GET http://testserver/stock/invalid "HTTP/1.1 404 Not Found"
+INFO | stock-api | 2024-11-11 04:45:02,556 | Started Stock API Challenge!
+INFO | stock-api | 2024-11-11 04:45:07,230 | Started Stock API Challenge!
+DEBUG | asyncio | 2024-11-11 04:45:07,285 | Using selector: EpollSelector
+INFO | httpx | 2024-11-11 04:45:07,287 | HTTP Request: GET http://testserver/stock/aapl "HTTP/1.1 404 Not Found"
+DEBUG | asyncio | 2024-11-11 04:45:07,318 | Using selector: EpollSelector
+INFO | httpx | 2024-11-11 04:45:07,319 | HTTP Request: GET http://testserver/stock/invalid "HTTP/1.1 404 Not Found"
+INFO | stock-api | 2024-11-11 04:45:45,535 | Started Stock API Challenge!
+INFO | stock-api | 2024-11-11 04:45:56,090 | Started Stock API Challenge!
+INFO | stock-api | 2024-11-11 04:46:37,832 | Started Stock API Challenge!
+INFO | stock-api | 2024-11-11 04:47:42,042 | Started Stock API Challenge!
+INFO | stock-api | 2024-11-11 04:47:49,791 | Started Stock API Challenge!
+INFO | stock-api | 2024-11-11 04:48:00,368 | Started Stock API Challenge!
+INFO | stock-api | 2024-11-11 04:48:04,131 | Started Stock API Challenge!
+INFO | stock-api | 2024-11-11 04:48:28,759 | Started Stock API Challenge!
+INFO | stock-api | 2024-11-11 04:48:32,879 | Started Stock API Challenge!
+INFO | stock-api | 2024-11-11 04:48:40,827 | Started Stock API Challenge!
+INFO | stock-api | 2024-11-11 04:49:12,034 | Started Stock API Challenge!
+INFO | stock-api | 2024-11-11 04:49:16,564 | Started Stock API Challenge!
+INFO | stock-api | 2024-11-11 04:49:25,762 | Started Stock API Challenge!
+INFO | stock-api | 2024-11-11 04:49:43,237 | Started Stock API Challenge!
+DEBUG | asyncio | 2024-11-11 04:49:43,293 | Using selector: EpollSelector
+INFO | httpx | 2024-11-11 04:49:43,295 | HTTP Request: GET http://testserver/stock/aapl "HTTP/1.1 404 Not Found"
+DEBUG | asyncio | 2024-11-11 04:49:43,329 | Using selector: EpollSelector
+INFO | httpx | 2024-11-11 04:49:43,331 | HTTP Request: GET http://testserver/stock/invalid "HTTP/1.1 404 Not Found"
+INFO | stock-api | 2024-11-11 04:50:59,105 | Started Stock API Challenge!
+INFO | stock-api | 2024-11-11 04:51:08,943 | Started Stock API Challenge!
+INFO | stock-api | 2024-11-11 04:51:14,170 | Started Stock API Challenge!
+DEBUG | asyncio | 2024-11-11 04:51:14,227 | Using selector: EpollSelector
+INFO | httpx | 2024-11-11 04:51:14,229 | HTTP Request: GET http://testserver/stock/aapl "HTTP/1.1 404 Not Found"
+DEBUG | asyncio | 2024-11-11 04:51:14,259 | Using selector: EpollSelector
+INFO | httpx | 2024-11-11 04:51:14,261 | HTTP Request: GET http://testserver/stock/invalid "HTTP/1.1 404 Not Found"
