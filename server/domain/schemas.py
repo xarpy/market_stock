@@ -1,7 +1,7 @@
 from datetime import date
 from typing import List
 
-from pydantic import BaseModel, field_validator
+from pydantic import BaseModel, model_validator
 
 
 class StockRequest(BaseModel):
@@ -44,11 +44,13 @@ class StockModel(BaseModel):
     performance_data: PerformanceData
     competitors: List[Competitor]
 
-    @field_validator("request_data", mode="before")
-    def convert_date_to_string(cls, v):
-        if isinstance(v, date):
-            return v.strftime("%Y-%m-%d")
-        return v
+    @model_validator(mode="before")
+    def formatted_fields(cls, values) -> dict:
+        if "amount" in values.keys():
+            values["purchased_amount"] = values["amount"]
+        elif "status" in values.keys():
+            values["purchased_status"] = values["status"]
+        return values
 
     class Config:
         from_attributes = True

@@ -16,27 +16,11 @@ class StockRepository(BaseRepository):
         super().__init__(session)
 
     def get_stock_by_symbol(self, symbol: str) -> Row | None:
-        """_summary_
-
-        Args:
-            symbol (str): _description_
-
-        Returns:
-            Row | None: _description_
-        """
         query = select(self.model).where(Stock.company_code == symbol)
         result = self.session.execute(query).first()
         return result
 
     def create_or_update_stock(self, stock_data: Dict[Any, Any]) -> Dict[Any, Any]:
-        """_summary_
-
-        Args:
-            stock_data (Dict[Any, Any]): _description_
-
-        Returns:
-            Dict[Any, Any]: _description_
-        """
         result = {"updated": False}
         stock = self.get_stock_by_symbol(stock_data["company_code"])
         if stock:

@@ -35,7 +35,7 @@ class PolygonClient:
             logger.error("An unexpected error occurred: %s", error)
 
     def _adjust_data(self, request_data):
-        data = {"stock_values": {}}
+        data = {"stock_values": {}, "request_data": date.today()}
         for key, value in request_data.items():
             if key in ["open", "high", "low", "close"]:
                 data["stock_values"][key] = value

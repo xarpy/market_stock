@@ -12,7 +12,7 @@ client = TestClient(app)
     "symbol, status_code, returned_value, expected",
     [
         # ("aapl", 200, {"symbol": "AAPL", "price": 145.23}, {"symbol": "AAPL", "price": 145.23}),
-        ("invalid", 404, None, {"detail": "Not Found"}),
+        ("invalid", 400, None, {"detail": "Stock data not found"}),
     ],
 )
 def test_get_stock(mock_db, mock_stock_service, symbol, status_code, returned_value, expected):
@@ -36,8 +36,8 @@ def test_get_stock(mock_db, mock_stock_service, symbol, status_code, returned_va
             "invalid",
             {"amount": 100},
             404,
-            {"detail": "Not Found"},
-            {"detail": "Not Found"},
+            {"detail": "Stock data not found"},
+            {"detail": "Stock data not found"},
         ),
     ],
 )
