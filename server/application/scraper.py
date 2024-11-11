@@ -57,7 +57,7 @@ class MarketWatchScraper:
         self._headers = new_headers
 
     def _validate_page_content(self, html):
-        if html.find("https://geo.captcha-delivery.com/") == -1:
+        if html.find("https://geo.captcha-delivery.com/"):
             raise ServiceError("Bot has found captcha!")
 
     def run(self, company: str) -> dict:
@@ -81,7 +81,7 @@ class MarketWatchScraper:
         context = browser.new_context(user_agent=self._user_agent, extra_http_headers=self._headers)
         page = context.new_page()
         page.goto(url)
-        page.wait_for_timeout(15000)
+        # page.wait_for_timeout(5000)
         # page.wait_for_load_state("domcontentloaded")
         page.wait_for_load_state("networkidle")
         page_content = page.content()
