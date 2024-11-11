@@ -214,5 +214,5 @@ Please make sure to update tests as appropriate.
 
 [python-url]: https://www.python.org/dev/peps/pep-0596/
 [python-image]: https://img.shields.io/badge/python-v3.12-blue
-[fastapi-image]: https://img.shields.io/badge/FastAPI-v0.6.8-blue
+[fastapi-image]: https://img.shields.io/badge/FastAPI-v0.115.4-green
 [fastapi-url]: https://fastapi.tiangolo.com/
