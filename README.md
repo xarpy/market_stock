@@ -19,11 +19,6 @@ Upgrade pip version and install requirements and install:
 ```sh
 pip install --upgrade pip && pip install --require-hashes -r requirements/dev.txt
 ```
-After installing all dependencies,compile this project with command:
-
-```sh
-playwright install
-```
 
 And now can run the api, just use the command below:
 ```sh
