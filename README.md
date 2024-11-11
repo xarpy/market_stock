@@ -1,9 +1,10 @@
 # Cial StockAPI Challenges
 
 [![Python Version][python-image]][python-url]
+[![FastAPI Version][fastapi-image]][fastapi-url]
 
 
-A collection of interesting challenges to improve technical skills and test the new ones
+A API based on fastapi with purpose to scrapping data from MarketWatch
 
 ## Installation
 
@@ -206,7 +207,7 @@ docker compose run backend tests/<module-you-want-test>.py::<function_teste_name
 * [Pre-commits](https://pre-commit.com/index.html)
 * [Editor Config](https://editorconfig.org/)
 * [Pip Tools](https://github.com/jazzband/pip-tools)
-* [Click](https://click.palletsprojects.com/en/8.1.x/)
+* [FastAPI](https://docs.djangoproject.com/en/3.2/)
 * [Docker](https://docs.docker.com/get-started/)
 * [Docker Compose](https://docs.docker.com/compose/)
 
@@ -218,3 +219,5 @@ Please make sure to update tests as appropriate.
 
 [python-url]: https://www.python.org/dev/peps/pep-0596/
 [python-image]: https://img.shields.io/badge/python-v3.12-blue
+[fastapi-image]: https://img.shields.io/badge/FastAPI-v0.6.8-blue
+[fastapi-url]: https://fastapi.tiangolo.com/
