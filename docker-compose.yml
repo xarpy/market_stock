@@ -1,0 +1,80 @@
+services:
+  database:
+    env_file: .env
+    image: postgres:latest
+    container_name: stock_db
+    ports:
+      - 5432:5432
+    volumes:
+      - postgres-data:/data
+    networks:
+      - stock-net
+    restart: on-failure
+    environment:
+      POSTGRES_USER: "${POSTGRES_USER}"
+      POSTGRES_PASSWORD: "${POSTGRES_PASSWORD}"
+      POSTGRES_DB: "${POSTGRES_DB}"
+
+  cache:
+      container_name: stock_cache
+      image: "redis:alpine"
+      environment:
+        - REDIS_REPLICATION_MODE=master
+      networks:
+        - stock-net
+      ports:
+        - 6379:6379
+      volumes:
+        - cache:/data
+      command:
+        - "--save 10 100"
+        - "--loglevel warning"
+
+  cache-management:
+    container_name: management-cache
+    image: redis/redisinsight:latest
+    networks:
+      - stock-net
+    ports:
+      - 5540:5540
+    volumes:
+      - redisinsight:/data
+    depends_on:
+      - cache
+    restart: on-failure
+
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: stock_api
+    env_file: .env
+    environment:
+      - PYTHONDONTWRITEBYTECODE=1
+      - PYTHONUNBUFFERED=1
+    command: sh -c "alembic upgrade head && python manage.py runserver"
+    ports:
+      - 8000:8000
+    depends_on:
+      - database
+      - cache
+    networks:
+      - stock-net
+    volumes:
+      - .:/app
+      - ./logs:/api/logs
+    restart: on-failure
+    stdin_open: true
+    tty: true
+
+networks:
+  stock-net:
+    driver: bridge
+
+volumes:
+  postgres-data:
+    driver: local
+  cache:
+    driver: local
+  redisinsight:
+    driver: local
